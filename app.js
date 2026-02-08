@@ -1,20 +1,19 @@
-const form = document.getElementById("myform");
+const scriptURL = "https://script.google.com/macros/s/AKfycbyDZTPQw7Zpck1QV7gNo3eUVBz5uOtdsEfWBr1S8mOSxa_S3floUhxSjP0FQNpAb_uO7w/exec";
 
-form.addEventListener("submit", function(e) {
+document.getElementById("myForm").addEventListener("submit", e => {
   e.preventDefault();
 
-  const data = {
-    name: form.name.value,
-  };
+  const formData = new FormData(e.target);
+  const data = Object.fromEntries(formData.entries());
 
-  fetch("https://script.google.com/macros/s/AKfycbxQih87CEWBLag_MwVI8JjZGGwnJ9yWWLHKjOKGkI61k8JiOF-Q0GEqtsaLuo9nzsT6/exec", {
+  fetch(scriptURL, {
     method: "POST",
     body: JSON.stringify(data)
   })
   .then(res => res.json())
-  .then(data => {
-    alert("Form submitted successfully!");
-    form.reset();
+  .then(() => {
+    alert("Form submitted successfully 🚀");
+    e.target.reset();
   })
-  .catch(err => console.error(err));
+  .catch(err => alert("Error 😢"));
 });
