@@ -3,75 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer Client Manager</title>
+    <title>CRM BY SIDORE</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.min.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
-<body>    <div class="container">
-        <div class="head">
-            <div class="left">
-                     <div class="logo">
-                         <img src="crm-logo.png" alt="">
-                     </div>
-                     <div class="span">
-                        <span>CRM FOR REGISTRATION</span>
-                     </div>
-            </div>
-            <div class="right">
-                   <!-- <span>
-                    <i class="fa-solid fa-add"></i>
-                   Add client
-                   </span> -->
-            </div>
-        </div>
-        <div class="form-input">
-            <form action="" id="myform"  method="post">
-                 <div class="client-info">
-                            
-                           <div class="form-control">
-
-                            <div class="profile">
-                                   <i class="fa-solid fa-camera"></i>
-                                  <span>Add Photo</span>
+<body>
+    
+       <div class="container">
+                   <div class="title">
+                           <div class="logo">
+                            <img src="crm-logo.png" alt="">
+                           </div>
+                           <div class="span">
+                            CRM REGISTRATION
+                           </div>
+                   </div>
+              <form  id="myForm">
+                <span class="span">Informations sur le client</span>
+                    <div class="form-control">
+                           <div class="profile">
+                                    <img src="icons8_switch_camera_26px.png" alt="">
+                                    <span>
+                                        Add Photo
+                                    </span>
+                           </div>
+                             <div class="inputs">
+                                   <input type="text" name="nom" id="" placeholder="Nom" required>
                             </div>
-                            <h3>Client Informations</h3>
+                             <div class="inputs">
+                                   <input type="text" name="prenom" id="" placeholder="Prénom" required>
+                            </div>
+                             <div class="inputs">
+                                   <input type="text" name="couriel" id="" placeholder="Couriel" required>
+                            </div>
+                             <div class="inputs">
+                                   <input type="text" name="langue" id="" placeholder="Langue "required>
+                            </div>
+                             <div class="inputs">
+                                   <input type="text" name="google_contact" id="" placeholder="Google Contact" required>
+                            </div>
+                             <div class="inputs">
+                                   <input type="text" name="telephone" id="" placeholder="Télephone" required>
+                            </div>
+                             <div class="inputs">
+                                   <input type="text" name="bail" id="" placeholder="Bail" required>
+                            </div>
+                            
+                    </div>
+                    <div class="autorize">
+                                <label for="checkbox">Autoriser à communiquer avec couriel?</label>
+                                <input type="checkbox" name="checkbox" id="" required>
+                    </div>
+                    <div class="btn">
+                        <button>Valider votre inscription</button>
+                    </div>
+                    
+                    <footer>
+                        
+                            Copy Right 2026 - Sidore Marcel
+                    </footer>
+                
+        </form>
+       </div>
 
-                                     <div class="row">
-                                            <input type="text" name="" id="" placeholder="Nom">
-                                            <input type="text" name="" id="" placeholder="Prénom">
-                                            <input type="text" name="" id="" placeholder="Télephone">
-
-                                     </div>
-                                     <div class="row">
-                                            <input type="text" name="" id="" placeholder="Couriel">
-                                            <input type="text" name="" id="" placeholder="Langue">
-                                            <input type="text" name="" id="" placeholder="Google Contact">
-                                     </div>
-                           </div>
-                            <div class="form-control">
-                            <h3>Autre</h3>
-                                     <div class="row">
-                                            <input type="date" name="" id="" placeholder="Naissance">
-                                            <input type="text" name="" id="" placeholder="Adresse">
-                                            <input type="text" name="" id="" placeholder="Adresse">
-
-                                             
-                                     </div>
-                                     <div class="check">
-                                                <input type="checkbox" name="" id="">
-                                                <label for="checkbox">Communiquer par couriel?</label>
-                                             </div>
-
-                                              <button>Submit your registration</button>
-                           </div>
-
-                          <footer>
-                            All Right Reserved | CopyRight 2026 - Sidore Marcel
-                          </footer>
-                 </div>
-
-            </form>
-        </div>
-    </div>
+ <script src="app.js"></script>
 </body>
 </html>
